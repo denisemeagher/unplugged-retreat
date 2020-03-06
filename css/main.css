@@ -153,6 +153,7 @@ footer p {
 }
 
 footer .content-wrapper {
+  justify-content: center;
   width: 55%;
   margin: 50px 0;
 }
@@ -457,6 +458,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   footer .contact {
@@ -473,6 +475,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
     padding-top: 20px
   }
 
@@ -487,7 +490,9 @@ aside {
   .contact-content {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
     align-items: flex-start;
+    width: 100%;
   }
 
 
@@ -510,16 +515,64 @@ aside {
 @media only screen and (min-width: 1200px) {
   /* desktop styles */
 
+  .content-wrapper {
+    max-width: 960px;
+  }
 
-  .features .features-items {
-    width: 70%;
-    margin: 0 auto;
-    align-content: space-between;
+/* hero */
+
+  .hero-area h1 {
+    width: 55%;
+  }
+
+  /* aside */
+  aside .content-wrapper{
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 33%;
+  }
+/* features */
+
+  .features h2 {
+    width: 90%
   }
 
   .features article {
     width: 30%;
   }
+
+  /* Reviews */
+  .reviews article div {
+    width: 50%;
+  }
+
+
+/* ===============  About Page ================= */
+
+    .mission h1,
+    .contact-section .content-wrapper h2 {
+        width: 90%;
+    }
+
+    .contact-section .content-wrapper h2 {
+        margin-bottom: 85px;
+    }
+
+    .contact-content div {
+      width: 50%;
+    }
+/* ============== FAQ Page ================== */
+
+    .faq h2 {
+        width: 100%;
+    }
+
+    .faq-content {
+        flex-basis:
+    }
 
 }
 
